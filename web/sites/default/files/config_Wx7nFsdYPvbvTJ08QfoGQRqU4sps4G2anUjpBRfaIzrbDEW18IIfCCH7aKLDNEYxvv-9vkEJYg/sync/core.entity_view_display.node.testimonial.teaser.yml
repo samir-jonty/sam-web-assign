@@ -1,0 +1,44 @@
+uuid: eaea8298-8020-4565-b4ab-55cac8042314
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimonial.body
+    - field.field.node.testimonial.field_company_logo
+    - field.field.node.testimonial.field_company_name
+    - field.field.node.testimonial.field_designation
+    - field.field.node.testimonial.field_highlight
+    - field.field.node.testimonial.field_name
+    - field.field.node.testimonial.field_summary
+    - field.field.node.testimonial.field_testimonial_image
+    - node.type.testimonial
+  module:
+    - text
+    - user
+id: node.testimonial.teaser
+targetEntityType: node
+bundle: testimonial
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_company_logo: true
+  field_company_name: true
+  field_designation: true
+  field_highlight: true
+  field_name: true
+  field_summary: true
+  field_testimonial_image: true

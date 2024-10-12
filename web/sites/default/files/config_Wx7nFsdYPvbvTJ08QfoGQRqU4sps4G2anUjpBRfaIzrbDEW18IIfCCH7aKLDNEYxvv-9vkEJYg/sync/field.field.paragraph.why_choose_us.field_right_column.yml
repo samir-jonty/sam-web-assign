@@ -1,0 +1,45 @@
+uuid: e072dc5b-6a65-410e-b3fd-d3a00aa2603c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_right_column
+    - paragraphs.paragraphs_type.wcu_image
+    - paragraphs.paragraphs_type.wcu_title_description_link
+    - paragraphs.paragraphs_type.why_choose_us
+  module:
+    - entity_reference_revisions
+id: paragraph.why_choose_us.field_right_column
+field_name: field_right_column
+entity_type: paragraph
+bundle: why_choose_us
+label: 'right column'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      wcu_image: wcu_image
+      wcu_title_description_link: wcu_title_description_link
+    negate: 0
+    target_bundles_drag_drop:
+      company_slide:
+        weight: 6
+        enabled: false
+      services:
+        weight: 7
+        enabled: false
+      wcu_image:
+        weight: 8
+        enabled: true
+      wcu_title_description_link:
+        weight: 9
+        enabled: true
+      why_choose_us:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

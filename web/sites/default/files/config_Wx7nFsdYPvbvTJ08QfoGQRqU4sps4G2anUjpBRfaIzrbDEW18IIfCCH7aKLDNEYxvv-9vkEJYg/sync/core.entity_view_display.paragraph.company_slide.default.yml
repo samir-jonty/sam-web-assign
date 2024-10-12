@@ -1,0 +1,35 @@
+uuid: 5bd5ab86-cac6-47f3-9408-32886548b715
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.company_slide.field_company__image
+    - field.field.paragraph.company_slide.field_company_title
+    - paragraphs.paragraphs_type.company_slide
+  module:
+    - image
+id: paragraph.company_slide.default
+targetEntityType: paragraph
+bundle: company_slide
+mode: default
+content:
+  field_company__image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_company_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

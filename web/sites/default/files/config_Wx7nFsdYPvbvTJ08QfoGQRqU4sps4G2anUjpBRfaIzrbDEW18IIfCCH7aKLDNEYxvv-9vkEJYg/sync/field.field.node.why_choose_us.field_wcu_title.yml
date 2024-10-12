@@ -1,0 +1,19 @@
+uuid: 74433779-2bda-436e-a298-b19504d8c20b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wcu_title
+    - node.type.why_choose_us
+id: node.why_choose_us.field_wcu_title
+field_name: field_wcu_title
+entity_type: node
+bundle: why_choose_us
+label: 'WCU title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

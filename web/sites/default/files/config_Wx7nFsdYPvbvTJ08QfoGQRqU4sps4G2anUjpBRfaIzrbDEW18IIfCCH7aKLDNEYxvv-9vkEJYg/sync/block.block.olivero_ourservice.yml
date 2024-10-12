@@ -1,0 +1,25 @@
+uuid: a95113de-974e-4423-a587-5c92bb5f8cd6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:713953b8-99c8-4ab3-9a7d-c1f1896fd4fd'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: olivero_ourservice
+theme: olivero
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:713953b8-99c8-4ab3-9a7d-c1f1896fd4fd'
+settings:
+  id: 'block_content:713953b8-99c8-4ab3-9a7d-c1f1896fd4fd'
+  label: 'Our Service'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

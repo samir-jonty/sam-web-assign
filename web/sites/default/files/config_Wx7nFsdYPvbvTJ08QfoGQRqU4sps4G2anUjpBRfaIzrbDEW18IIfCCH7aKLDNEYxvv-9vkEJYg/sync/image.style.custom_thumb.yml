@@ -1,0 +1,14 @@
+uuid: 81375900-5053-4e7e-91ab-d31e54030464
+langcode: en
+status: true
+dependencies: {  }
+name: custom_thumb
+label: custom_thumb
+effects:
+  6ee7bada-ade3-400c-8fdc-40bd6b73b21f:
+    uuid: 6ee7bada-ade3-400c-8fdc-40bd6b73b21f
+    id: image_resize
+    weight: 1
+    data:
+      width: 20
+      height: 20

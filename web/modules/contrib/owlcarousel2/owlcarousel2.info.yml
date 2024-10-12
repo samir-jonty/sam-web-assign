@@ -1,0 +1,11 @@
+name: 'Owl Carousel 2'
+type: module
+description: 'Module that implements Owl Carousel 2 sliders.'
+core_version_requirement: ^9 || ^10
+configure: owlcarousel2.settings
+package: 'Carousel'
+
+# Information added by Drupal.org packaging script on 2022-12-27
+version: '2.0.1'
+project: 'owlcarousel2'
+datestamp: 1672159342

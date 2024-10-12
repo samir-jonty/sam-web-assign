@@ -1,0 +1,43 @@
+uuid: a5de1abc-1476-4190-a5cb-01786a274879
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wcu_title_description_link.field_wcu_description
+    - field.field.paragraph.wcu_title_description_link.field_wcu_link
+    - field.field.paragraph.wcu_title_description_link.field_wcu_title
+    - paragraphs.paragraphs_type.wcu_title_description_link
+  module:
+    - link
+id: paragraph.wcu_title_description_link.default
+targetEntityType: paragraph
+bundle: wcu_title_description_link
+mode: default
+content:
+  field_wcu_description:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_wcu_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_wcu_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

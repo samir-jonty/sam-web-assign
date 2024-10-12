@@ -1,0 +1,23 @@
+uuid: 8c303d8a-8db4-400e-a568-88f401e3b857
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.why_choose_us
+  module:
+    - link
+id: node.why_choose_us.field_link
+field_name: field_link
+entity_type: node
+bundle: why_choose_us
+label: link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

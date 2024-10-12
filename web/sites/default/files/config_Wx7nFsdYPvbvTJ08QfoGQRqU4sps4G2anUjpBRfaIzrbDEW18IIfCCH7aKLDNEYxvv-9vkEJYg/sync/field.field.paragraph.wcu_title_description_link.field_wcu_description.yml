@@ -1,0 +1,19 @@
+uuid: 055cc200-2098-42c8-b1b7-4120fb27a2ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wcu_description
+    - paragraphs.paragraphs_type.wcu_title_description_link
+id: paragraph.wcu_title_description_link.field_wcu_description
+field_name: field_wcu_description
+entity_type: paragraph
+bundle: wcu_title_description_link
+label: 'wcu description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

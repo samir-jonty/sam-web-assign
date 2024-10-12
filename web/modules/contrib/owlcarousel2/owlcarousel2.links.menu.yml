@@ -1,0 +1,7 @@
+# OwlCarousel2 menu items definition
+entity.owlcarousel2.collection:
+  title: 'Owl Carousel 2 list'
+  route_name: entity.owlcarousel2.collection
+  description: 'List OwlCarousel2 entities'
+  parent: system.admin_content
+  weight: 100

@@ -1,0 +1,21 @@
+owlcarousel2:
+  css:
+    theme:
+      /libraries/OwlCarousel2/dist/assets/owl.carousel.min.css: { minified: true }
+      /libraries/OwlCarousel2/dist/assets/owl.theme.default.min.css: { minified: true }
+      css/animate.css: { }
+      css/owlcarousel2.css: { }
+  js:
+    /libraries/OwlCarousel2/dist/owl.carousel.min.js: { minified: true }
+    js/owlcarousel2.js: { }
+
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+
+owlcarousel2.form:
+  css:
+    theme:
+      css/owlcarousel2-form-style.css: { }

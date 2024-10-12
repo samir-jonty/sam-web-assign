@@ -1,0 +1,35 @@
+uuid: 4866f6b0-9599-4ce8-bdc7-1504b3d6b9c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services.field_service_image
+    - field.field.paragraph.services.field_service_title
+    - paragraphs.paragraphs_type.services
+  module:
+    - image
+id: paragraph.services.default
+targetEntityType: paragraph
+bundle: services
+mode: default
+content:
+  field_service_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_service_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

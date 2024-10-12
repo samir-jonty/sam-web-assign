@@ -1,0 +1,25 @@
+uuid: 4c32ba0c-aaee-41d3-8069-c9d5a325e0ac
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:29adcefd-4e65-4139-85d1-c8ea6a11665c'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: olivero_clickdescription
+theme: olivero
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:29adcefd-4e65-4139-85d1-c8ea6a11665c'
+settings:
+  id: 'block_content:29adcefd-4e65-4139-85d1-c8ea6a11665c'
+  label: 'click description'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

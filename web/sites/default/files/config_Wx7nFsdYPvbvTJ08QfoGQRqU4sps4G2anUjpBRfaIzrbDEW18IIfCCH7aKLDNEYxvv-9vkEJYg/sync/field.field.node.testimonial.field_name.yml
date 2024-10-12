@@ -1,0 +1,19 @@
+uuid: 31fe6385-1847-45a3-94fe-3633da530727
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.testimonial
+id: node.testimonial.field_name
+field_name: field_name
+entity_type: node
+bundle: testimonial
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

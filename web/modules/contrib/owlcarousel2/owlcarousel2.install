@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Contains library file requirement check and update hooks.
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function owlcarousel2_requirements($phase) {
+  $requirements = [];
+
+  switch ($phase) {
+    case 'install':
+    case 'runtime':
+      $plugin_detected = FALSE;
+
+      $libraries_path = 'libraries/OwlCarousel2';
+      if (\Drupal::hasService('library.libraries_directory_file_finder')) {
+        /** @var \Drupal\Core\Asset\LibrariesDirectoryFileFinder $library_file_finder */
+        $library_file_finder = \Drupal::service('library.libraries_directory_file_finder');
+        $libraries_path = $library_file_finder->find('OwlCarousel2');
+      }
+      elseif (function_exists('libraries_get_path')) {
+        $libraries_path = libraries_get_path('OwlCarousel2');
+      }
+
+      if (file_exists(DRUPAL_ROOT . '/' . $libraries_path . '/dist/owl.carousel.min.js')) {
+        $plugin_detected = TRUE;
+      }
+
+      if ($plugin_detected) {
+        $message = t('Owl Carousel 2 plugin detected in %path', ['%path' => '/libraries/OwlCarousel2.']);
+      }
+      else {
+        $message = t('Owl Carousel 2 plugin was not found. Please download it here: https://github.com/OwlCarousel2/OwlCarousel2.');
+      }
+
+      $requirements['owlcarousel2'] = [
+        'title' => t('Owl Carousel 2 Plugin'),
+        'value' => $message,
+        'severity' => $plugin_detected ? REQUIREMENT_OK : REQUIREMENT_ERROR,
+      ];
+      break;
+  }
+
+  return $requirements;
+}

@@ -1,0 +1,10 @@
+uuid: 2b11b873-abd8-4cd2-8e29-dafaf943c87b
+langcode: en
+status: true
+dependencies: {  }
+id: wcu_title_description_link
+label: 'WCU title-description-link'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

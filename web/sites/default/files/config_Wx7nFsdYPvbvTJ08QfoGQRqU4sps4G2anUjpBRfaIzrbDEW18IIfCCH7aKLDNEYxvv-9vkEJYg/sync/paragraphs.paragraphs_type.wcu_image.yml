@@ -1,0 +1,10 @@
+uuid: 9f2008a3-f398-459a-b623-54c56b4edda0
+langcode: en
+status: true
+dependencies: {  }
+id: wcu_image
+label: 'WCU Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

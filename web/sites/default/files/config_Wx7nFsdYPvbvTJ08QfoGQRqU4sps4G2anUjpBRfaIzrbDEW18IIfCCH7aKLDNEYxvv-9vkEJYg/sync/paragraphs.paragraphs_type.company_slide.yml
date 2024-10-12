@@ -1,0 +1,10 @@
+uuid: ebab04a1-c109-47b4-a054-ba3a42f6a141
+langcode: en
+status: true
+dependencies: {  }
+id: company_slide
+label: 'Company slide'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

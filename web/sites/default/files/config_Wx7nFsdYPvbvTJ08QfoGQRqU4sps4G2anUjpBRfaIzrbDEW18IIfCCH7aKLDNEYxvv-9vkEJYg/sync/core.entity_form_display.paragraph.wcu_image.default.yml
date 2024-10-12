@@ -1,0 +1,26 @@
+uuid: e1f9a441-8e16-438d-b093-7eeff25baeae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wcu_image.field_wcu_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.wcu_image
+  module:
+    - image
+id: paragraph.wcu_image.default
+targetEntityType: paragraph
+bundle: wcu_image
+mode: default
+content:
+  field_wcu_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

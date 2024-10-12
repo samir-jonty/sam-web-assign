@@ -1,0 +1,64 @@
+uuid: d3e07228-3e6e-4088-9abd-df1f73b30acb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.why_choose_us.body
+    - field.field.node.why_choose_us.field_link
+    - field.field.node.why_choose_us.field_wcu_image
+    - field.field.node.why_choose_us.field_wcu_title
+    - node.type.why_choose_us
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.why_choose_us.default
+targetEntityType: node
+bundle: why_choose_us
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_wcu_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_wcu_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
